@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProjectEuler", "ProjectEuler", "{4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 1 - Multiples of 3 and 5", "Problem 1 - Multiples of 3 and 5\Problem 1 - Multiples of 3 and 5.vcxproj", "{03845752-C2F6-4FBF-A6A9-77EDC4F86892}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 2 - Even Fibonacci numbers", "Problem 2 - Even Fibonacci numbers\Problem 2 - Even Fibonacci numbers.vcxproj", "{3C019967-EABE-4F98-8CE2-C22B9D1737E3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 3 - Largest prime factor", "Problem 3 - Largest prime factor\Problem 3 - Largest prime factor.vcxproj", "{A29A8275-C6BA-4CAB-AEA2-063854010B97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TopCoder", "TopCoder", "{D4FDF7B9-D496-49B5-A27C-AC3B53E69881}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Miscellaneous", "Miscellaneous", "{C56171C5-BAF0-484E-8375-479CD9F52693}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 4 - Largest palindrome product", "Problem 4 - Largest palindrome product\Problem 4 - Largest palindrome product.vcxproj", "{8A4AC929-C31A-42F0-A5E0-32B59E8E0202}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 5 - Smallest multiple", "Problem 5 - Smallest multiple\Problem 5 - Smallest multiple.vcxproj", "{BA0F0D05-A78D-4AF3-B01D-9EF608119DE8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 6 - Sum square difference", "Problem 6 - Sum square difference\Problem 6 - Sum square difference.vcxproj", "{E218F551-FF4A-4A4A-AD38-498B97ED8AAC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 7 - 10001st prime", "Problem 7 - 10001st Prime\Problem 7 - 10001st Prime.vcxproj", "{49D2A990-C075-47DB-B19D-B91CB62DC0EA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 8 - Largest product in a series", "Problem 8 - Largest product in a series\Problem 8 - Largest product in a series.vcxproj", "{D8CA1254-DFCC-4F5F-BE4A-3D486F5FD3B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03845752-C2F6-4FBF-A6A9-77EDC4F86892}.Debug|Win32.ActiveCfg = Debug|Win32
+		{03845752-C2F6-4FBF-A6A9-77EDC4F86892}.Debug|Win32.Build.0 = Debug|Win32
+		{03845752-C2F6-4FBF-A6A9-77EDC4F86892}.Release|Win32.ActiveCfg = Release|Win32
+		{03845752-C2F6-4FBF-A6A9-77EDC4F86892}.Release|Win32.Build.0 = Release|Win32
+		{3C019967-EABE-4F98-8CE2-C22B9D1737E3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3C019967-EABE-4F98-8CE2-C22B9D1737E3}.Debug|Win32.Build.0 = Debug|Win32
+		{3C019967-EABE-4F98-8CE2-C22B9D1737E3}.Release|Win32.ActiveCfg = Release|Win32
+		{3C019967-EABE-4F98-8CE2-C22B9D1737E3}.Release|Win32.Build.0 = Release|Win32
+		{A29A8275-C6BA-4CAB-AEA2-063854010B97}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A29A8275-C6BA-4CAB-AEA2-063854010B97}.Debug|Win32.Build.0 = Debug|Win32
+		{A29A8275-C6BA-4CAB-AEA2-063854010B97}.Release|Win32.ActiveCfg = Release|Win32
+		{A29A8275-C6BA-4CAB-AEA2-063854010B97}.Release|Win32.Build.0 = Release|Win32
+		{8A4AC929-C31A-42F0-A5E0-32B59E8E0202}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8A4AC929-C31A-42F0-A5E0-32B59E8E0202}.Debug|Win32.Build.0 = Debug|Win32
+		{8A4AC929-C31A-42F0-A5E0-32B59E8E0202}.Release|Win32.ActiveCfg = Release|Win32
+		{8A4AC929-C31A-42F0-A5E0-32B59E8E0202}.Release|Win32.Build.0 = Release|Win32
+		{BA0F0D05-A78D-4AF3-B01D-9EF608119DE8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BA0F0D05-A78D-4AF3-B01D-9EF608119DE8}.Debug|Win32.Build.0 = Debug|Win32
+		{BA0F0D05-A78D-4AF3-B01D-9EF608119DE8}.Release|Win32.ActiveCfg = Release|Win32
+		{BA0F0D05-A78D-4AF3-B01D-9EF608119DE8}.Release|Win32.Build.0 = Release|Win32
+		{E218F551-FF4A-4A4A-AD38-498B97ED8AAC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E218F551-FF4A-4A4A-AD38-498B97ED8AAC}.Debug|Win32.Build.0 = Debug|Win32
+		{E218F551-FF4A-4A4A-AD38-498B97ED8AAC}.Release|Win32.ActiveCfg = Release|Win32
+		{E218F551-FF4A-4A4A-AD38-498B97ED8AAC}.Release|Win32.Build.0 = Release|Win32
+		{49D2A990-C075-47DB-B19D-B91CB62DC0EA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{49D2A990-C075-47DB-B19D-B91CB62DC0EA}.Debug|Win32.Build.0 = Debug|Win32
+		{49D2A990-C075-47DB-B19D-B91CB62DC0EA}.Release|Win32.ActiveCfg = Release|Win32
+		{49D2A990-C075-47DB-B19D-B91CB62DC0EA}.Release|Win32.Build.0 = Release|Win32
+		{D8CA1254-DFCC-4F5F-BE4A-3D486F5FD3B0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D8CA1254-DFCC-4F5F-BE4A-3D486F5FD3B0}.Debug|Win32.Build.0 = Debug|Win32
+		{D8CA1254-DFCC-4F5F-BE4A-3D486F5FD3B0}.Release|Win32.ActiveCfg = Release|Win32
+		{D8CA1254-DFCC-4F5F-BE4A-3D486F5FD3B0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{03845752-C2F6-4FBF-A6A9-77EDC4F86892} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
+		{3C019967-EABE-4F98-8CE2-C22B9D1737E3} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
+		{A29A8275-C6BA-4CAB-AEA2-063854010B97} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
+		{8A4AC929-C31A-42F0-A5E0-32B59E8E0202} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
+		{BA0F0D05-A78D-4AF3-B01D-9EF608119DE8} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
+		{E218F551-FF4A-4A4A-AD38-498B97ED8AAC} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
+		{49D2A990-C075-47DB-B19D-B91CB62DC0EA} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
+		{D8CA1254-DFCC-4F5F-BE4A-3D486F5FD3B0} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
+	EndGlobalSection
+EndGlobal
