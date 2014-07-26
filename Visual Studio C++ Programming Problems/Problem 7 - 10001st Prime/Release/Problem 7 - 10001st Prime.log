@@ -1,5 +1,9 @@
-﻿  Problem7.cpp
-Problem7.cpp(30): warning C4244: 'initializing' : conversion from 'double' to 'uint64_t', possible loss of data
-  Generating code
-  Finished generating code
-  Problem 7 - 10001st Prime.vcxproj -> C:\Mythreya Sandbox\Visual Studio C++ Programming Problems\Release\Problem 7 - 10001st prime.exe
+﻿Build started 7/25/2014 6:41:37 PM.
+     1>Project "C:\Mythreya Sandbox\Programming\Visual Studio C++ Programming Problems\Problem 7 - 10001st Prime\Problem 7 - 10001st Prime.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         Problem 7 - 10001st Prime.vcxproj -> C:\Mythreya Sandbox\Programming\Visual Studio C++ Programming Problems\Release\Problem 7 - 10001st prime.exe
+     1>Done Building Project "C:\Mythreya Sandbox\Programming\Visual Studio C++ Programming Problems\Problem 7 - 10001st Prime\Problem 7 - 10001st Prime.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.44
