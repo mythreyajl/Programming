@@ -35,10 +35,11 @@ Mythreya Jayendra Lakshman
 
 using namespace std;
 
-int prod13(string str, int start) {
-	int prod = 1;
-	for (int i = start; i < start + 13; i++)
-		prod *= (int)(str.at(i) - 48);
+__int64 prod13(string str, __int64 start) {
+    __int64 prod = 1;
+    for (__int64 i = start; i < start + 13; i++) {
+        prod *= (int)(str.at(i) - 48);
+    }
 	return prod;
 }
 
@@ -58,14 +59,14 @@ int main() {
     myReadFile.close();
 	str.erase(str.length()-1, 1);
 	
-	int myProd = 1;
-	int tempProd = 1;
+    __int64  myProd = 1;
+    __int64  tempProd = 1;
 	int id = 0;
-	for (int i = 0; i < str.length() - 13 + 1; i++) {
+    for (__int64 i = 0; i < str.length() - 13 + 1; i++) {
 		tempProd = prod13(str, i);
 		if (tempProd  > myProd) {
 			myProd = tempProd;
-			id = (int)(str.at(i) - 48);
+			id = i;
 		}
 	}
 	cout << myProd << " " << id << endl;
