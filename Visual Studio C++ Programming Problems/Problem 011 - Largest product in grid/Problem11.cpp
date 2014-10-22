@@ -50,8 +50,8 @@ using namespace std;
 int findGreatestProd(int**,int);
 int findVert(int**, int);
 int findHoriz(int**, int);
-int findDiagTPBR(int**, int);
-int findDiagBRTL(int**, int);
+int findDiagonal(int**, int);
+int findInverseDiagonal(int**, int);
 
 int main() {
 	ifstream myReadFile;
@@ -83,7 +83,7 @@ int main() {
 }
 
 int findGreatestProd(int ** Arr, int len) {
-	return max(findVert(Arr, len), max(findHoriz(Arr, len), max(findDiagTPBR(Arr, len), findDiagBRTL(Arr, len))));
+    return max(findVert(Arr, len), max(findHoriz(Arr, len), max(findDiagonal(Arr, len), findInverseDiagonal(Arr, len))));
 }
 
 int findVert(int** Arr, int len) {
@@ -112,7 +112,7 @@ int findHoriz(int** Arr, int len) {
 	return maxProd;
 }
 
-int findDiagTPBR(int** Arr, int len) {
+int findDiagonal(int** Arr, int len) {
 	int maxProd = 1;
 	int Prod = 1;
 	for (int i = 0; i < len - 4 + 1; i++) {
@@ -125,7 +125,7 @@ int findDiagTPBR(int** Arr, int len) {
 	return maxProd;
 }
 
-int findDiagBRTL(int** Arr, int len) {
+int findInverseDiagonal(int** Arr, int len) {
 	int maxProd = 1;
 	int Prod = 1;
 	for (int i = 4 - 1; i < len; i++) {
