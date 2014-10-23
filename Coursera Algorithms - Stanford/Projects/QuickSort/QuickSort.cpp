@@ -58,36 +58,34 @@ quickSort::computeQuickSortNumComparisons(  )
 unsigned int 
 quickSort::computeQuickSortNumComparisons( int start, int end ) 
 {
-    if( start == end - 1 )
-        return 0;
-
-    int pivot = findPivotPosition( start, end );    
-    swap( pivot, start );
-
-    // BODY OF QUICKSORT
-    int pointLesser = start+1;
-    int currentPoint = start+1;
-
-    while( currentPoint < end )
+    if( start < end )       
     {
-        if( getValue( currentPoint ) < getValue( start ) )
+        int pivot = findPivotPosition( start, end );    
+        swap( pivot, start );
+
+        // BODY OF QUICKSORT
+        int pointLesser = start+1;
+        int currentPoint = start+1;
+
+        while( currentPoint < end )
         {
-            swap( currentPoint, pointLesser );
-            pointLesser++;
+            if( getValue( currentPoint ) < getValue( start ) )
+            {
+                swap( currentPoint, pointLesser );
+                pointLesser++;
+            }
+            currentPoint++;
         }
-        currentPoint++;
-    }
-    int C = end-start-1;
-    swap( pointLesser-1, start );
+        int C = end-start-1;
+        swap( pointLesser-1, start );
     
+        int A = computeQuickSortNumComparisons( start, pointLesser-1 );
+        int B = computeQuickSortNumComparisons( pointLesser, end );
 
-    int A = computeQuickSortNumComparisons( start, pointLesser );
-    int B = 0;
+        return A+B+C;
+    }
 
-    if( pointLesser < end )
-         B = computeQuickSortNumComparisons( pointLesser+1, end );
-
-    return A+B+C;
+    return 0;
 }
 
 void
@@ -101,21 +99,18 @@ quickSort::swap( int pos1, int pos2 )
 int
 quickSort::findPivotPosition( int start, int end )
 {
-    if( start == end-1 )
-        return start;
-
     if( PIVOT_RULE == FIRST )
         return start;
     else if( PIVOT_RULE == LAST )
         return end-1;
     else if( PIVOT_RULE == MIDDLE )
     {
-         int mid = getValue( (int) (start+end)/2 );
+         int mid = getValue( (int) (start+end-1)/2 );
          int first = getValue( start );
          int last = getValue( end-1 );
 
          if( ( mid > first && mid < last ) || ( mid > last && mid < first ) )
-             return (start+end)/2; 
+             return (start+end-1)/2; 
          else if( ( last > first && last < mid ) || ( last > mid && last < first ) ) 
              return end-1;
          else if( ( first > last && first < mid )|| ( first > mid && first < last ) )
