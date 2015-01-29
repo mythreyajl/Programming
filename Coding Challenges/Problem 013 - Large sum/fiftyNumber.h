@@ -13,7 +13,7 @@ using namespace std;
 class fiftyNumber
 {
 private:
-	vector<int> fiftyDigitNumber;
+	vector<int> fiftyDigitNumber[50];
 	vector<int> carry;
 public: 
 	fiftyNumber();
