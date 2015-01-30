@@ -25,6 +25,7 @@ Mythreya Jayendra Lakshman
 using namespace std;
 
 int main(){ 
+    typedef fiftyNumber num;
 	vector<fiftyNumber*> numbers;
 	fiftyNumber accumulator(50, 10);
 	ifstream input("Data.txt");
@@ -32,7 +33,7 @@ int main(){
 	if (input.is_open()) {
 		while (!input.eof()) {
 			getline(input, line);
-			fiftyNumber* impl = new fiftyNumber(50, 10);
+			num* impl = new num(50, 10);
 			for (int i = 0; i < line.length; i++)
 				
 		}
