@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+		.large{
+			font-size:200%
+		}
+		.small{
+			color:blue;
+			font-size:50%;
+		}
+		#custom{
+			color:green;
+		}
+		.underline{
+			text-decoration:underline;
+		}
+		.bolded{
+			font-weight:bold;
+		}
+		.greenbox {
+			background-color:green;
+			width:200px;
+			height:200px;
+			z-index:2;
+			position:relative;
+			top:-35px;
+		}
+		.redbox {
+			background-color:red;
+			width:500px;
+			height:500px;
+			position:absolute;
+			left:100px;
+			top:200px;
+			z-index:1;
+		}
+		.purplebox{
+			background-color:#6A0888;
+			position:relative;
+			z-index:2;
+		}
+		.cyan{
+			color:#58FAF4;
+		}
+	</style>
+	
+</head>
+
+<body>
+<div class="greenbox">
+	<h1> Other paragraph</h1>
+	<p> Dummy text </p>
+</div>
+<div class="redbox">
+	<h1>Example Domain</h1>
+	<p class="large">Paragraph:1</p>
+	<p class="small">Paragraph:2</p>
+	<p class="large">Paragraph:3 (same type as Paragraph 1)</p>
+	<p id="custom" class="large">Paragraph:4</p>
+	<p><a href="http://www.iana.org/domains/example">More information...</a></p>
+</div>
+
+<div class="purplebox">
+	<p> Purple shade</p>
+</div>
+
+<div class="cyan">
+	<p> Cyan font</p>
+</div>
+
+<div class="clear">
+	<p> The third <span class="underline large bolded">word</span> in this paragraph is underlined. </p>
+</div>
+
+</body>
+</html>
