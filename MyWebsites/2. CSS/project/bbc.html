@@ -18,8 +18,13 @@
 			width:100%;
 			height:40px;
 			color:white;
-			colorite;
 		}		
+		a{
+			text-decoration:none;
+		}
+		a:visited{
+			color:white;
+		}
 		.fixed-width{
 			width:976px;
 			margin:0 auto;
@@ -32,7 +37,7 @@
 		#sign-in{
 			font-weight:bold;
 			float:left;
-			padding:13px 70px 11px 63px;
+			padding:13px 70px 10px 63px;
 			border-right:1px solid #990000;
 			font-size:0.9em;
 		}
@@ -46,7 +51,7 @@
 			font-weight:bold;
 			font-size:0.8em;
 			list-style:none;
-			padding: 10px 10px 10px 10px;
+			padding: 8px 10px 9px 10px;
 			border-right:1px solid #990000;
 		}
 		#search-box{
@@ -59,6 +64,7 @@
 			border:none;
 			padding:2px 0 3px 10px;
 			font-size:0.8em;
+			font-weight:bold;
 			background-image:url("../images/search.png");
 			background-repeat:no-repeat;
 			background-position: 120px center;
@@ -70,7 +76,7 @@
 		#third-bar{
 			background-color:white;
 			width:100%;
-			height:900px;
+			height:1900px;
 		}
 	</style>
 </head>
@@ -87,20 +93,20 @@
 				</div><!-- End of bbc-logo -->
 				<div id="top-menu">
 					<ul>
-						<li>News</li>
-						<li>Sport</li>
-						<li>Weather</li>
-						<li>Earth</li>
-						<li>Future</li>
-						<li>Shop</li>
-						<li>TV</li>
-						<li>Radio</li>
-						<li>More...</li>
+						<li><a href="http://www.bbc.com/news/">News</a></li>
+						<li><a href="http://www.bbc.com/sport/0/">Sport</a></li>
+						<li><a href="http://www.bbc.com/weather/">Weather</a></li>
+						<li><a href="http://www.bbc.com/earth/world">Earth</a></li>
+						<li><a href="http://www.bbc.com/future">Future</a></li>
+						<li><a href="http://shop.bbc.com/us/page/home">Shop</a></li>
+						<li><a href="http://www.bbc.co.uk/tv">TV</a></li>
+						<li><a href="http://www.bbc.co.uk/radio">Radio</a></li>
+						<li><a href="http://www.bbc.co.uk/a-z/">More...</a></li>
 					</ul>
 				</div><!-- End of top-menu -->
 				<div id="search-box">
 					<form>
-						<input type="text" placeholder="Search" color="black"/>
+						<input type="text" placeholder="Search"/>
 					<form>
 				</div>
 			</div><!-- End of fixed-width -->
