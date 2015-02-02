@@ -1,4 +1,0 @@
-﻿  Problem8.cpp
-c:\mythreya sandbox\programming\visual studio c++ programming problems\problem 008 - largest product in a series\problem8.cpp(41): warning C4244: 'argument' : conversion from '__int64' to 'unsigned int', possible loss of data
-c:\mythreya sandbox\programming\visual studio c++ programming problems\problem 008 - largest product in a series\problem8.cpp(69): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
-  Problem 8 - Largest product in a series.vcxproj -> C:\Mythreya Sandbox\Programming\Visual Studio C++ Programming Problems\Debug\Problem 008 - Largest product in a series.exe

@@ -1,6 +1,0 @@
-﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Inversions.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Inversions.cpp
-c:\mythreya sandbox\programming\courses\coursera algorithms - stanford\projects\inversions\inversions.cpp(81): warning C4018: '<' : signed/unsigned mismatch
-  Inversions-main.cpp
-  Generating Code...
-  Inversions.vcxproj -> C:\Mythreya Sandbox\Programming\Courses\Coursera Algorithms - Stanford\Projects\Debug\1.Inversions.exe
