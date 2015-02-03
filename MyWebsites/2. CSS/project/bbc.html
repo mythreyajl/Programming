@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Mythreya's BBC</title>
+	<title>Myth's BBC News - UK</title>
 	
 	<meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -19,7 +19,14 @@
 			height:40px;
 			color:white;
 		}		
+		#news-bar{
+			background-color:#990000;
+			width:100%;
+			height:88px;
+			color:white;
+		}		
 		a{
+			color:white;
 			text-decoration:none;
 		}
 		a:visited{
@@ -31,14 +38,14 @@
 		}
 		#bbc-logo{
 			padding: 8px 8px 4px 8px;
-			border-right:1px solid #990000;
+			border-right:1px solid #890000;
 			float:left;
 		}
 		#sign-in{
 			font-weight:bold;
 			float:left;
 			padding:13px 70px 10px 63px;
-			border-right:1px solid #990000;
+			border-right:1px solid #890000;
 			font-size:0.9em;
 		}
 		#top-menu{
@@ -52,7 +59,7 @@
 			font-size:0.8em;
 			list-style:none;
 			padding: 8px 10px 9px 10px;
-			border-right:1px solid #990000;
+			border-right:1px solid #890000;
 		}
 		#search-box{
 			float:left;
@@ -73,6 +80,73 @@
 			padding:0 0 0 -5px;
 		}
 		
+		#news-bar p{
+			margin:0;
+			padding:0;
+			padding-top:9px;
+			padding-left:8px;
+			float:left;
+		}
+		#newsheader {
+			font-size:2.75em;
+		}
+		#uk {
+			font-size:0.75em;
+		}
+		#rss {
+			float:right;
+			margin-top:30px;
+			margin-right:6px;
+			font-size:0.8em;
+			font-weight:bold;
+		}
+		#rss img{
+			height:14px;
+			margin-top:4px;
+			margin-right:3px;
+		}
+		#topic-menu{
+		}
+		#topic-menu ul{
+			float:left;
+			background-color:#3E0C0D;
+			margin:3px;
+			height:25px;
+		}
+		#topic-menu li{
+			float:left;
+			font-weight:bold;
+			font-size:0.75em;
+			list-style:none;
+			padding:5px;
+			border-right:1px solid #890000;
+			background-color:none;
+		}
+		#bottom-menu{
+			float:left;
+		}
+		#bottom-menu ul{
+			float:left;
+			background-color:#EDEDED;
+			color:#505050;
+			margin:0px;
+			height:25px;
+			width:976px;
+			color:#505050;
+		}
+		#bottom-menu li{
+			float:left;
+			font-weight:bold;
+			font-size:0.75em;
+			list-style:none;
+			padding:5px;
+			border-right:1px solid #CCCCCC;
+			background-color:none;
+		}
+		
+		#bottom-menu a{
+			color:#505050;
+		}
 		#third-bar{
 			background-color:white;
 			width:100%;
@@ -108,9 +182,54 @@
 					<form>
 						<input type="text" placeholder="Search"/>
 					<form>
-				</div>
+				</div> <!-- End of search-box -->
 			</div><!-- End of fixed-width -->
 		</div><!-- End of top-bar -->
+		
+		<div id="break"></div>
+		<div id="news-bar">
+			<div class="fixed-width">
+				<p id="newsheader">NEWS <span id="uk">UK</span></p>
+				<div id="rss">
+					RSS <img src="../images/rss.gif"/>
+				</div>
+				<div id="break"></div>
+				<div id="topic-menu">
+					<ul>
+						<li><a href="http://www.bbc.com/news/">Home</a></li>
+						<li><a href="http://www.bbc.com/news/world/us_and_canada/">US &amp; Canada</a></li>
+						<li><a href="http://www.bbc.com/news/world/latin_america/">Latin America</a></li>
+						<li><a href="http://www.bbc.com/news/uk/">UK</a></li>
+						<li><a href="http://www.bbc.com/world/africa">Africa</a></li>
+						<li><a href="http://www.bbc.com/world/asia">Asia</a></li>
+						<li><a href="http://www.bbc.com/news/world/australia/">Australia</a></li>
+						<li><a href="http://www.bbc.com/news/world/europe/">Europe</a></li>
+						<li><a href="http://www.bbc.com/news/world/middle_east/">Mid-East</a></li>
+						<li><a href="http://www.bbc.com/news/business/">Business</a></li>
+						<li><a href="http://www.bbc.com/news/health">Health</a></li>
+						<li><a href="http://www.bbc.com/news/science_and_environment/">Sci/Environment</a></li>
+						<li><a href="http://www.bbc.com/news/technology/">Tech</a></li>
+						<li><a href="http://www.bbc.com/news/entertainment_and_arts/">Entertainment</a></li>
+						<li><a href="http://www.bbc.com/news/video_and_audio/">Video</a></li>
+					</ul>
+				</div> <!-- End of topic-menu -->
+			</div><!-- End of fixed-width -->
+		</div><!-- End of news-bar -->
+		
+		
+		<div id="break"></div>
+		<div class="fixed-width">
+			<div id="bottom-menu">
+				<ul>
+					<li><a href="http://www.bbc.com/news/england/">England</a></li>
+					<li><a href="http://www.bbc.com/news/northern_ireland/">Northern Ireland</a></li>
+					<li><a href="http://www.bbc.com/news/scotland/">Scotland</a></li>
+					<li><a href="http://www.bbc.com/news/wales/">Wales</a></li>
+					<li><a href="http://www.bbc.com/news/politics/">UK Politics</a></li>
+					<li><a href="http://www.bbc.com/news/education/">Education</a></li>
+				</ul>				
+			</div> <!-- End of bottom-menu -->
+		</div> <!-- End of fixed-width-->
 		<div id="third-bar">
 		</div><!-- End of third-bar -->
 	</div><!-- End of container -->
