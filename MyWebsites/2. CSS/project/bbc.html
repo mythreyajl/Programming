@@ -162,6 +162,41 @@
 		#bottom-menu a:hover{
 			text-decoration: underline;
 		}
+		#selected{
+			background-color:#EDEDED;
+			color:#505050;
+			height:16px;
+		}
+		#content{
+		}
+		#date{
+			float:left;
+			color:#505050;
+			font-size:0.8em;
+		}
+		.heading-left{
+			margin:0;
+			padding:0;
+			float:left
+			color:#4A7194;
+		}
+		.heading-left h1:hover{
+			text-decoration: underline;
+		}
+		.heading-left img{
+			float:left;
+			margin-top:-15px;
+			height:183px;
+		}
+		.news-text{
+			margin-top:-15px;
+			float:right;
+			color:#505050;
+			padding-left:10px;
+			font-size:0.9em;
+		}
+		.offset{
+		}
 	</style>
 </head>
 
@@ -209,7 +244,7 @@
 						<li><a href="http://www.bbc.com/news/">Home</a></li>
 						<li><a href="http://www.bbc.com/news/world/us_and_canada/">US &amp; Canada</a></li>
 						<li><a href="http://www.bbc.com/news/world/latin_america/">Latin America</a></li>
-						<li><a href="http://www.bbc.com/news/uk/">UK</a></li>
+						<li id="selected" ><a style="color:#505050" href="http://www.bbc.com/news/uk/">UK</a></li>
 						<li><a href="http://www.bbc.com/world/africa">Africa</a></li>
 						<li><a href="http://www.bbc.com/world/asia">Asia</a></li>
 						<li><a href="http://www.bbc.com/news/world/australia/">Australia</a></li>
@@ -220,7 +255,7 @@
 						<li><a href="http://www.bbc.com/news/science_and_environment/">Sci/Environment</a></li>
 						<li><a href="http://www.bbc.com/news/technology/">Tech</a></li>
 						<li><a href="http://www.bbc.com/news/entertainment_and_arts/">Entertainment</a></li>
-						<li><a href="http://www.bbc.com/news/video_and_audio/">Video</a></li>
+						<li style="border-right:none"><a href="http://www.bbc.com/news/video_and_audio/">Video</a></li>
 					</ul>
 				</div> <!-- End of topic-menu -->
 			</div><!-- End of fixed-width -->
@@ -245,9 +280,18 @@
 		<div id="break"></div>
 		<div id="content">
 			<div class="fixed-width">
-				<p class="headings"><a href="http://www.bbc.com/news/health-31069173">MPs say yes to three-person babies</a></p>
-			</div> <!-- End of fixed-width-->
-		</div> <!-- End of fixed-width-->
+				<div id="date">
+					<p><span style="font-weight:bold">3 February 2015</span> Last updated at 22:07 ET</p>
+				</div>
+				<div class="heading-left">
+					<h1><a style="color:#4A7194" href="http://www.bbc.com/news/health-31096218">'Half of UK people' will get cancer</a></h1>
+					<img src="../images/cancer.jpg"/>
+					<p class="news-text"> One in two people in the UK will probably develop<br />
+					cancer at some point, but lifestyle choices could <br />
+					still arrest the rise, experts say.</p>
+				</div> <!-- End of heading-left -->
+			</div> <!-- End of date -->
+		</div> <!-- End of fixed-width -->
 		
 	</div><!-- End of container -->
 </body>
