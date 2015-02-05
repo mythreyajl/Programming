@@ -2,32 +2,48 @@
 <html>
 
 <head>
-	<title>Learning Javascript</title>
+	<title>Guess my Number!</title>
 	<meta charset="utf-8" />
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
-	<p>How many fingers are you holding up?</p>
+	<p>How many fingers are you holding up (0-5)?</p>
 	<input id="myNumber" />
 	<button id="guess">Guess!</button>
+	<div id="log"><br/>Hi</div>
+	
 	<script type="text/javascript">
-		document.getElementById("guess").onclick=function() {
-			var gotit=false; var guesses=1; var x;
-			while (gotit==false) {
-				x=Math.random();
-				x=6*x;
-				x=Math.floor(x);
-				if (document.getElementById("myNumber").value==x) {
-					gotit=true;
-				} 
-				else {
-					guesses++;
-				}
+	
+		document.getElementById("guess").onclick = function() {
+			var myInputNumber = document.getElementById("myNumber").value;
+			if (myInputNumber > 5 || myInputNumber < 0) {
+				alert("Invalid input. Enter a number between 0 and 5 (inclusive) ");
 			}
-			alert("Got it! It was a "+x+". It only took me "+guesses+"guesses!");
+			else {
+				var valid = false;
+				var count = 1;
+				var prev= new Array(0;
+				while (valid == false) {
+					myGuess = Math.floor(Math.random()*6);
+					if (myGuess != prev ) {
+						document.getElementById("log").innerHTML = "myGuess" 
+						if (myGuess == myInputNumber) {
+							document.getElementById("log").innerHTML = "<br/ >" + "Good Guess "
+							valid == true;	
+							break;
+						}
+						count += 1;
+						prev = myGuess;
+					}
+					else
+						continue;
+				}
+				alert("You're holding up "+myInputNumber+" fingers. Hurray! It took me "+count+" guesses!!");
+			}
 		}
+			
 	</script>
 </body>
 
