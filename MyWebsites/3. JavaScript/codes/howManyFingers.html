@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Guess Number</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+</head>
+
+
+<body>
+
+	<p> How many fingers am I holding (0-5)?</p>
+	<input id="userGuess" />
+	<button id="clickHere">Submit</button>
+				
+	<script type="text/javascript">
+		
+		var fingers=5;
+		var random = Math.floor(Math.random()*(fingers+1));
+		
+		document.getElementById("clickHere").onclick = function() {
+			if (document.getElementById("userGuess").value == random) {
+				alert("You Guessed right!! "+random+" is the right number!!");
+			}
+			else {
+				alert("Correct guess is "+random+". Sorry, try again!!");
+			}	
+		}				
+		var random = Math.floor(Math.random()*(fingers+1));
+
+		
+	</script>
+
+</body>
+</html>
