@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>Change Image</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+</head>
+
+
+<body>
+	
+	<input id="myInput" type="text" placeholder="Enter Text!"/>
+	
+	<button id="vanishText">Vanish Text!</button>
+	
+	<button id="changeText">Change Text!</button>
+	
+	<div id="firstDiv">This is some text</div>
+
+	<script type="text/javascript">
+		
+		document.getElementById("vanishText").onclick= function() {
+			var divID="firstDiv";
+			var style2 = document.getElementById(divID).style.display;
+			if (style2=="none")
+				document.getElementById(divID).style.display =  "inherit";
+			else
+				document.getElementById(divID).style.display = "none";
+		}
+		
+		document.getElementById("changeText").onclick= function() {
+			var newText = document.getElementById("myInput").value;
+			document.getElementById("firstDiv").style.display =  "inherit";
+			document.getElementById("firstDiv").innerHTML = newText;
+		}
+	</script>
+
+</body>
+</html>
