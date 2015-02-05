@@ -1,41 +1,32 @@
-<!doctype html>
-<html>
-<head>
-    <title>Change Image</title>
+var colorArray = ["red","purple","green","yellow","black","blue"];
+var origTopSq = document.getElementById("square").style.marginTop;
+var origLeftSq = document.getElementById("square").style.marginLeft;
+var origTopTx = document.getElementById("text").style.marginTop;
+var origLeftTx = document.getElementById("text").style.marginLeft;
 
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-	<style type="text/css">
-		#circle{
-			width:100px;
-			height:100px;
-			background-color:red;
-			border-radius:50px;
-		}
-	</style>
-</head>
+document.getElementById("square").onclick= function() {	
+	var color = document.getElementById("square").style.backgroundColor;
+	document.getElementById("square").style.backgroundColor="white";
+	setTimeout(resetSquare(),3000);
+}
+
+function resetSquare() 	{
+	document.getElementById("square").style.backgroundColor=colorArray[randChoice()];
+	var posTopSq = origTopSq+Math.floor(Math.random()*800);
+	var posLeftSq = origLeftSq+Math.floor(Math.random()*1600);
+	var posTopTx = origTopSq+Math.floor(Math.random()*800);
+	var posLeftTx = origLeftSq+Math.floor(Math.random()*1600);
+	document.getElementById("square").style.marginTop=String(posTopSq)+"px";
+	document.getElementById("square").style.marginLeft=String(posLeftSq)+"px";
+	document.getElementById("text").style.marginTop=String(posTopTx)+"px";
+	document.getElementById("text").style.marginLeft=String(posLeftTx)+"px";
+}
+
+function randChoice() {
+	return Math.floor(Math.random()*6);
+}
 
 
-<body>
 
-	<h1>Vanishing Circle</h1>
-	
-	<div id="circle"></div>
 
-	<p>Click the circle to make it vanish. </>
 
-	<script type="text/javascript">
-		
-		document.getElementById("circle").onclick= function() {
-			var color = document.getElementById("circle").style.backgroundColor;
-			if (color == "red")
-                document.getElementById("circle").style.backgroundColor="white";
-            else
-                document.getElementById("circle").style.backgroundColor="red";
-		
-		}
-	</script>
-
-</body>
-</html>
