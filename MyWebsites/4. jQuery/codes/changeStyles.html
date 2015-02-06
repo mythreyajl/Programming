@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning JavaScript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+	
+	<style type="text/css">
+	
+		#circle{
+			width:100px;
+			height:100px;
+			background-color:green;
+			border-radius:50px;
+		}
+		.square{
+			width:300px;
+			height:300px;
+			margin-top:10px;
+			background-color:red;
+		}
+		
+	</style>
+	
+</head>
+
+<body>
+
+	<div id="circle"></div>
+	
+	<div class="square"></div>
+	
+	<script>
+		
+		/* // Display Square width on hover
+		$(".square").hover(
+			function() {
+				alert($(".square").css("width"));
+			}
+		);*/
+		
+		/* // Display any shape (this) on click
+		$("div").click(
+			function() {
+				alert($(this).css("width"));
+			}
+		);*/
+		
+		/* // Change Attribute
+		$("div").hover(
+			function() {
+				$(this).css("width","200px");
+			}
+		);*/
+		
+		/* // Hide an Element
+		$("div").hover(
+			function() {
+				//$(this).css("display","none"); 
+				// $(this).hide();
+				$(this).fadeOut();
+			}
+		);*/
+		// Fade-out square when clicking a circle
+		$(".square").click( 
+			function() {
+				$("#circle").fadeOut();
+			)
+		);
+		
+		$("#circle").click( 
+			function() {
+				$(".square").fadeOut();
+			}
+		);
+	</script>
+
+</body>
+
+</html>
