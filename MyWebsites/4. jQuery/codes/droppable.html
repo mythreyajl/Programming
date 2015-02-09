@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>jQuery UI</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	
+	<style>
+		#square{
+			width:200px;
+			height:200px;
+			background-color:green;
+			margin:20px;
+			font-weight:bold;
+			color:red;
+		}
+		
+		#droppable{
+			width:300px;
+			height:300px;
+			background-color:yellow;
+			margin:20px;
+			font-weight:bold;
+			color:blue;
+		}
+		
+	</style>
+	
+</head>
+
+<body>
+
+	<div id="square">Drag me around!</div>
+	
+	<div id="droppable">Drop in me!</div>
+	
+	<script>
+	
+		$("#square").draggable();
+		
+		$("#droppable").droppable({
+			drop:function(ui, event) {
+				$("#droppable").css("background-color","red");
+			}
+		
+		});		
+		
+	</script>
+
+</body>
+
+</html>

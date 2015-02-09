@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning AJAX</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+	
+</head>
+
+<body>
+
+	<h1>RegEx Matching</h1>
+		
+	<script>
+		
+		var regex1=/great/;
+		var regex2=/great/i;
+		var regex3=/e/g;
+		
+		var string1="Regex is great!!";
+		var string2="Regex is Great!!";
+		
+		var result1=string1.match(regex1);
+		var result2=string2.match(regex1);
+		var result3=string2.match(regex2);
+		var result4=string1.match(regex3);
+		
+		alert(result1);
+		alert(result2);
+		alert(result3);
+		alert(result4);
+		
+	</script>
+
+</body>
+
+</html>
