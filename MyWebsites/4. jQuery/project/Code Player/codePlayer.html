@@ -23,35 +23,33 @@
 			border-bottom:1px solid grey;
 		}
 		#html {
-			margin:2px;
 			float:left;
 		}
 		
 		#center-bar{
 			list-style:none;
 			margin:0 auto;
-			width:220px;
+			width:200px;
 			height:37px;
-			border:1px solid grey;
-			border-radius:5px;
 		}
 		
 		#center-bar li{
 			float:left;
-			padding:6px 6px;
-			border-right:1px solid grey;
+			padding:10px 6px;
+			border:1px solid grey;
+			border-radius:5px;
 		}
 		
-		#html{
+		#HTML{
 			background-color:#CCCCCC;
 		}
-		#css{
+		#CSS{
 			background-color:#CCCCCC;
 		}
-		#js{
+		#JS{
 			background-color:#CCCCCC;
 		}
-		#result{
+		#Result{
 			background-color:#CCCCCC;
 		}
 		
@@ -76,26 +74,29 @@
 		
 		.code-section{
 			float:left;
-			width:24%;
+			width:0;
 			border-right:1px solid grey;
 		}
 		
-		#html-section{			
+		#HTML-section{			
 		}
 		
-		#css-section{		
+		#CSS-section{		
 		}
 		
-		#js-section{		
+		#JS-section{		
 		}
 		
-		#result-section{	
-			border-right:none;
+		#Result-section{	
 		}
 		
 		p{
 			float:right;
-			margin:0 20px 0 0;
+			margin:0 auto;
+		}
+		
+		.section-label{
+			float:right;
 		}
 	</style>
 	
@@ -112,25 +113,25 @@
 		</div>
 		
 		<ul id="center-bar">
-			<li id="html">HTML</li>
-			<li id="css">CSS</li>
-			<li id="js">JS</li>
-			<li id="result">Result</li>
+			<li id="HTML">HTML</li>
+			<li id="CSS">CSS</li>
+			<li id="JS">JS</li>
+			<li id="Result">Result</li>
 		</ul>
 				
 	</div>
 	
-	<div class="code-section" id="html-section">
-		<p>HTML</p>
+	<div class="code-section" id="HTML-section">
+		<p></p>
 	</div>
-	<div class="code-section" id="css-section">
-		<p>CSS</p>
+	<div class="code-section" id="CSS-section">
+		<p></p>
 	</div>
-	<div class="code-section" id="js-section">
-		<p>JS</p>
+	<div class="code-section" id="JS-section">
+		<p></p>
 	</div>
-	<div class="code-section" id="result-section">
-		<p>Result</p>
+	<div class="code-section" id="Result-section">
+		<p></p>
 	</div>
 		
 	<script>
@@ -138,24 +139,25 @@
 		var codeBarHeight = windowHeight-$("#top-bar").height();
 		$(".code-section").css("height",codeBarHeight+"px");
 		
-		var windowCount=1;
+		var windowCount=0;
 		var width=100;
 		
-		$("#html").click( function () { updateColorSegments("#html");});
-		$("#css").click( function () {updateColorSegments("#css");});
-		$("#js").click( function () {updateColorSegments("#js");});
+		$("#HTML").click( function () { updateColorSegments("#HTML");});
+		$("#CSS").click( function () {updateColorSegments("#CSS");});
+		$("#JS").click( function () {updateColorSegments("#JS");});
+		$("#Result").click( function () {updateColorSegments("#Result");});
 		
 		function updateColorSegments (section) {
-			var color = $(section).css("background-color");			
-			if (color != '#CCCCCC') {
-				$(section).css("background-color","#AAAAAA");
+			var colorSection = $(section).css("background-color");			
+			if (colorSection  == 'rgb(204, 204, 204)') {
+				$(section).css("background-color",'rgb(170, 170, 170)');
 				$(section+"-section").css("width",width+"%");
+				$(section+"-section").html(section.substring(1,section.length));
 				windowCount = windowCount+1;
 				updateWidth();
 			}
 			else {
-				alert(color);
-				$(section).css("background-color","#AAAAAA");
+				$(section).css("background-color",'rgb(204, 204, 204)');
 				$(section+"-section").html("");
 				$(section+"-section").css("width","0");
 				windowCount = windowCount-1;
@@ -164,7 +166,7 @@
 		}
 				
 		function updateWidth() {
-			width=100/windowCount;
+			width=100/windowCount-1;
 			$(".code-section").css("width",width+"%");
 		}
 	</script>
