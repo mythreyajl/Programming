@@ -7,7 +7,9 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 	
-	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jqueryui.min.js"></script>
 	
 	<style>
 		body {
@@ -99,8 +101,26 @@
 			float:right;
 		}
 		
-		textarea {
+		.code-section 	textarea {
 			resize: none;width:100%;height:100%;
+		}
+		
+		iframe {
+			width:100%;
+			height:100%;
+			position:fixed;
+			border:none;
+		}
+		
+		.containerTitle {
+			position:absolute;
+			float:right;
+			right:200px;
+			top:60px;
+			background-color:#FFF;
+			padding:4px;
+			border:1px solid grey;
+			border-radius:4px;
 		}
 	</style>
 	
@@ -126,8 +146,7 @@
 	</div>
 	
 	<div class="code-section"   id="HTML-section">
-	
-<textarea autocomplete="off" class="code_input">
+<textarea autocomplete="off" id="htmlCode">
 <!DOCTYPE html>
 <html>
 <head>
@@ -139,60 +158,34 @@
 </body>
 </html>
 </textarea>
-<form autocomplete="off" style="margin:0px;display:none;" action="tryit_view.asp" method="post" target="view" id="tryitform" name="tryitform" onsubmit="validateForm();">
-	<input type="hidden" name="code" id="code" />
-	<input type="hidden" id="bt" name="bt" />
-</form>
 
 	</div>
 	
 	<div class="code-section" id="CSS-section">
 	
-	<textarea autocomplete="off" class="code_input">
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>HTML Section</title>
-</head>
-<body>
-
-</body>
-</html>
+<textarea autocomplete="off" id="cssCode">
 </textarea>
-<form autocomplete="off" style="margin:0px;display:none;" action="tryit_view.asp" method="post" target="view" id="tryitform" name="tryitform" onsubmit="validateForm();">
-	<input type="hidden" name="code" id="code" />
-	<input type="hidden" id="bt" name="bt" />
-</form>
 	
 	</div>
 	
 	<div class="code-section" id="JS-section">
 	
-	<textarea autocomplete="off" class="code_input">
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>JS Section</title>
-</head>
-<body>
-
-</body>
-</html>
+<textarea autocomplete="off" id="jsCode">
 </textarea>
-<form autocomplete="off" style="margin:0px;display:none;" action="tryit_view.asp" method="post" target="view" id="tryitform" name="tryitform" onsubmit="validateForm();">
-	<input type="hidden" name="code" id="code" />
-	<input type="hidden" id="bt" name="bt" />
-</form>
 	
 	
 	</div>
 	
 	<div class="code-section" id="Result-section">	
+		<div class="Result-class">
+			<iframe id="result-frame"></iframe>
+		</div>
 	</div>
 		
 	<script>
+	
+		$(function() {
+		
 		var windowHeight = $(window).height();
 		var codeBarHeight = windowHeight-$("#top-bar").height();
 		$(".code-section").css("height",codeBarHeight+"px");
@@ -226,6 +219,13 @@
 			width=100/windowCount-1;
 			$(".code-section").css("width",width+"%");
 		}
+		
+		$("#run-button").click( function () {
+			$("#result-frame").contents().find('html').html("<style>"+$('#cssCode').val()+"</style>"+$("#htmlCode").val());
+			document.getElementById('result-frame').contentWindow.eval( $('#jsCode').val() );
+		});
+		
+		});
 	</script>
 	
 
