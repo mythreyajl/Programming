@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 	
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-	
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jqueryui.min.js"></script>
 	
 	<style>
@@ -152,6 +152,7 @@
 <head>
   <meta charset="utf-8">
   <title>CodePlayer</title>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script> 
 </head>
 <body>
 
@@ -208,7 +209,7 @@
 			}
 			else {
 				$(section).css("background-color",'rgb(204, 204, 204)');
-				$(section+"-section").html("");
+				//$(section+"-section").html("");
 				$(section+"-section").css("width","0");
 				windowCount = windowCount-1;
 				updateWidth();
