@@ -13,6 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9D218BBF-FEB1-4DBA-B155-3D2D3DC9B4F2}</ProjectGuid>
     <RootNamespace>MathClasses</RootNamespace>
+    <ProjectName>Matrix</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
