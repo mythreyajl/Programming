@@ -11,10 +11,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 002 - Even Fibonacc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 003 - Largest prime factor", "Problem 003 - Largest prime factor\Problem 3 - Largest prime factor.vcxproj", "{A29A8275-C6BA-4CAB-AEA2-063854010B97}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TopCoder", "TopCoder", "{D4FDF7B9-D496-49B5-A27C-AC3B53E69881}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Miscellaneous", "Miscellaneous", "{C56171C5-BAF0-484E-8375-479CD9F52693}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 004 - Largest palindrome product", "Problem 004 - Largest palindrome product\Problem 4 - Largest palindrome product.vcxproj", "{8A4AC929-C31A-42F0-A5E0-32B59E8E0202}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 005 - Smallest multiple", "Problem 005 - Smallest multiple\Problem 5 - Smallest multiple.vcxproj", "{BA0F0D05-A78D-4AF3-B01D-9EF608119DE8}"
@@ -28,10 +24,6 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 009 - Special Pythogorean triplet", "Problem 009 - Special Pythogorean triplet\Problem 009 - Special Pythogorean triplet.vcxproj", "{DB6CCEBA-A0A5-43CA-A0B2-B6D69D93065A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 010 - Summation of primes", "Problem 010 - Summation of primes\Problem 010 - Summation of primes.vcxproj", "{B337B690-13B4-444C-AC9A-A4FD1CF67E72}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Classes", "Classes", "{43288724-6001-4669-8CBF-80673E0DBE2E}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathClasses", "MathClasses\MathClasses.vcxproj", "{9D218BBF-FEB1-4DBA-B155-3D2D3DC9B4F2}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 011 - Largest product in grid", "Problem 011 - Largest product in grid\Project 011 - Largest product in grid.vcxproj", "{08441304-3953-49A4-97A0-132384AEECA4}"
 EndProject
@@ -85,10 +77,6 @@ Global
 		{B337B690-13B4-444C-AC9A-A4FD1CF67E72}.Debug|Win32.Build.0 = Debug|Win32
 		{B337B690-13B4-444C-AC9A-A4FD1CF67E72}.Release|Win32.ActiveCfg = Release|Win32
 		{B337B690-13B4-444C-AC9A-A4FD1CF67E72}.Release|Win32.Build.0 = Release|Win32
-		{9D218BBF-FEB1-4DBA-B155-3D2D3DC9B4F2}.Debug|Win32.ActiveCfg = Debug|Win32
-		{9D218BBF-FEB1-4DBA-B155-3D2D3DC9B4F2}.Debug|Win32.Build.0 = Debug|Win32
-		{9D218BBF-FEB1-4DBA-B155-3D2D3DC9B4F2}.Release|Win32.ActiveCfg = Release|Win32
-		{9D218BBF-FEB1-4DBA-B155-3D2D3DC9B4F2}.Release|Win32.Build.0 = Release|Win32
 		{08441304-3953-49A4-97A0-132384AEECA4}.Debug|Win32.ActiveCfg = Debug|Win32
 		{08441304-3953-49A4-97A0-132384AEECA4}.Debug|Win32.Build.0 = Debug|Win32
 		{08441304-3953-49A4-97A0-132384AEECA4}.Release|Win32.ActiveCfg = Release|Win32
@@ -116,8 +104,6 @@ Global
 		{D8CA1254-DFCC-4F5F-BE4A-3D486F5FD3B0} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
 		{DB6CCEBA-A0A5-43CA-A0B2-B6D69D93065A} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
 		{B337B690-13B4-444C-AC9A-A4FD1CF67E72} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
-		{43288724-6001-4669-8CBF-80673E0DBE2E} = {C56171C5-BAF0-484E-8375-479CD9F52693}
-		{9D218BBF-FEB1-4DBA-B155-3D2D3DC9B4F2} = {43288724-6001-4669-8CBF-80673E0DBE2E}
 		{08441304-3953-49A4-97A0-132384AEECA4} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
 		{19BB8A0B-7FCE-48E3-991D-4A5A354BB9A7} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
 		{B335D795-9F27-4B45-86D6-3E8C15B3E949} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
