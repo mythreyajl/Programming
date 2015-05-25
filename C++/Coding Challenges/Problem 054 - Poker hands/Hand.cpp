@@ -72,6 +72,19 @@ Hand::Hand( std::string inputText )
 void
 Hand::findWinner()
 {
+    P1.status = findHandStatus( P1 );
+    P2.status = findHandStatus( P2 );
+    if( P1.status < P2.status )
+        countWins( 1 );
+    else
+        countWins( 0 );
+}
+
+HandStatus
+Hand::findHandStatus( Player player )
+{
+
+      
 }
 
 void
