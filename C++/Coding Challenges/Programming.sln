@@ -37,6 +37,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 015 - Lattice paths
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 016 - Power digit sum", "Problem 016 - Power digit sum\Problem 016 - Power digit sum.vcxproj", "{5B44F79C-FEA3-4A3A-8F86-56692088DD2D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 054 - Poker hands", "Problem 054 - Poker hands\Problem 054 - Poker hands.vcxproj", "{29ADD57A-A88B-445C-A379-A61151D0BE62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -107,6 +109,10 @@ Global
 		{5B44F79C-FEA3-4A3A-8F86-56692088DD2D}.Debug|Win32.Build.0 = Debug|Win32
 		{5B44F79C-FEA3-4A3A-8F86-56692088DD2D}.Release|Win32.ActiveCfg = Release|Win32
 		{5B44F79C-FEA3-4A3A-8F86-56692088DD2D}.Release|Win32.Build.0 = Release|Win32
+		{29ADD57A-A88B-445C-A379-A61151D0BE62}.Debug|Win32.ActiveCfg = Debug|Win32
+		{29ADD57A-A88B-445C-A379-A61151D0BE62}.Debug|Win32.Build.0 = Debug|Win32
+		{29ADD57A-A88B-445C-A379-A61151D0BE62}.Release|Win32.ActiveCfg = Release|Win32
+		{29ADD57A-A88B-445C-A379-A61151D0BE62}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -128,5 +134,6 @@ Global
 		{81C62111-894F-4FEA-95BB-4F2DD1977DF0} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
 		{0513820A-4E5B-4D30-8A1F-CB566D93D67A} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
 		{5B44F79C-FEA3-4A3A-8F86-56692088DD2D} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
+		{29ADD57A-A88B-445C-A379-A61151D0BE62} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
 	EndGlobalSection
 EndGlobal
