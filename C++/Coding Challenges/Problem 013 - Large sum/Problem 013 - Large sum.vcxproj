@@ -64,11 +64,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="fiftyNumber.cpp" />
+    <ClCompile Include="number.cpp" />
     <ClCompile Include="Problem13.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="fiftyNumber.h" />
+    <ClInclude Include="number.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
