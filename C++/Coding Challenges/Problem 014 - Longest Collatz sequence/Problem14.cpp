@@ -1,6 +1,10 @@
 ﻿/*
-https://projecteuler.net/problem=14
 
+LINK: https://projecteuler.net/problem=14
+
+PROBLEM: Longest Collatz sequence
+
+Statement: 
 The following iterative sequence is defined for the set of positive integers:
 
 n → n/2 (n is even)
@@ -14,6 +18,10 @@ It can be seen that this sequence (starting at 13 and finishing at 1) contains 1
 Which starting number, under one million, produces the longest chain?
 
 NOTE: Once the chain starts the terms are allowed to go above one million.
+
+Author:
+Mythreya Jayendra Lakshman
+
 */
 
 #include <inttypes.h>

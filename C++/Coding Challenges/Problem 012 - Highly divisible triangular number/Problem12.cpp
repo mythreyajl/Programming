@@ -1,5 +1,4 @@
 /*
-
 LINK: https://projecteuler.net/problem=12
 
 PROBLEM: Highly divisible triangular number
