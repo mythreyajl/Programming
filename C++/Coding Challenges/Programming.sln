@@ -39,8 +39,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 012 - Highly divisi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 013 - Large sum", "Problem 013 - Large sum\Problem 013 - Large sum.vcxproj", "{B335D795-9F27-4B45-86D6-3E8C15B3E949}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "myStack", "Stack\Stack.vcxproj", "{35018509-EF9C-4872-BAC8-AF111F8747C8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -103,10 +101,6 @@ Global
 		{B335D795-9F27-4B45-86D6-3E8C15B3E949}.Debug|Win32.Build.0 = Debug|Win32
 		{B335D795-9F27-4B45-86D6-3E8C15B3E949}.Release|Win32.ActiveCfg = Release|Win32
 		{B335D795-9F27-4B45-86D6-3E8C15B3E949}.Release|Win32.Build.0 = Release|Win32
-		{35018509-EF9C-4872-BAC8-AF111F8747C8}.Debug|Win32.ActiveCfg = Debug|Win32
-		{35018509-EF9C-4872-BAC8-AF111F8747C8}.Debug|Win32.Build.0 = Debug|Win32
-		{35018509-EF9C-4872-BAC8-AF111F8747C8}.Release|Win32.ActiveCfg = Release|Win32
-		{35018509-EF9C-4872-BAC8-AF111F8747C8}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -127,6 +121,5 @@ Global
 		{08441304-3953-49A4-97A0-132384AEECA4} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
 		{19BB8A0B-7FCE-48E3-991D-4A5A354BB9A7} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
 		{B335D795-9F27-4B45-86D6-3E8C15B3E949} = {4027337F-ED7F-4FAA-B3AA-E9DAF21E56FF}
-		{35018509-EF9C-4872-BAC8-AF111F8747C8} = {C56171C5-BAF0-484E-8375-479CD9F52693}
 	EndGlobalSection
 EndGlobal
