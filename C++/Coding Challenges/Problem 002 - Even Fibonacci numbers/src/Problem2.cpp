@@ -14,11 +14,7 @@ Mythreya Jayendra Lakshman
 
 */
 
-#include <stdio.h>
 #include <iostream>
-
-using namespace std;
-
 
 int main() {
     int sum = 0, temp = 0;
@@ -30,7 +26,7 @@ int main() {
         if (b % 2 == 0) 
             sum += b;
     }
-    cout << "The expected sum is: " << sum << endl;
-    system("pause");
+    std::cout << "The expected sum is: " << sum << std::endl;
+    std::cin.get();
     return 0;
 }

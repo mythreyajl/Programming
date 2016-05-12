@@ -13,10 +13,7 @@ Mythreya Jayendra Lakshman
 
 */
 
-#include <stdio.h>
 #include <iostream>
-
-using namespace std;
 
 int main() {
     int sum = 0;
@@ -24,7 +21,7 @@ int main() {
         if (i % 3 == 0 || i % 5 == 0)   // test for multiple of 3 or 5
             sum += i;                   // accumulator
     }
-    cout << "The expected sum is: " << sum << endl; 
-    system("pause");
+    std::cout << "The expected sum is: " << sum << std::endl;
+    std::cin.get();
     return 0;
 }
